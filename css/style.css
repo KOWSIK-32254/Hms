@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position: center;
+      overflow-x: hidden;
+    }
+.whyus{
+  position: relative;
+  left: 640px;
+}
+
+.ourdoctors{
+  position: relative;;
+  left:640px;
+}

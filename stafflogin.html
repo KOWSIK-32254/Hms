@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>body {
+            font-family: 0.6666666667em 'Open Sans', sans-serif;
+            background: #fff;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1);
+            background-blend-mode: overlay;
+            -webkit-background-blend-mode: overlay;
+            border-radius: 15px 0  15px 0;
+       }
+        .wrapper {
+            width: 100%;
+       }
+        .wrapper-content {
+            position: relative;
+            width: 25%;
+            margin: 100px auto;
+            background: #35394a;
+           /* Old browsers */
+            background: -moz-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+           /* FF3.6+ */
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, #1f222e));
+           /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+           /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+           /* Opera 11.10+ */
+            background: -ms-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+           /* IE10+ */
+            background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+           /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35394a', endColorstr='#1f222e',GradientType=1);
+           /* IE6-9 fallback on horizontal gradient */
+            padding: 20px 30px;
+       }
+        .wrapper-content button {
+            width: 45%;
+            padding: 11px 0 24px;
+            outline: initial;
+            background-color: #1da1f2;
+            border-radius: 10px;
+            color: #fff;
+            border: 1px solid rgba(46, 46, 47, 0.72);
+       }
+        .wrapper-content button:first-child {
+            background: #45619d;
+       }
+        .wrapper-content button i {
+            position: absolute;
+       }
+        .wrapper .hed-fb {
+            display: inline;
+            position: relative;
+       }
+        .wrapper h3 {
+            padding: 10px 0 0;
+            text-align: center;
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem;
+       }
+        .or-email {
+            text-align: center;
+            color: #fff;
+            line-height: 5rem;
+       }
+        .or-email span {
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+       }
+        form {
+            border: 0;
+            display: block;
+            width: 100%;
+       }
+        input[type="text"], input[type="password"] {
+            font-size: 1em;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            padding: 0 5px;
+            outline: none;
+       }
+        .user-name, .user-pasword, .user-email {
+            border-bottom: 1px solid #4d4d4d;
+       }
+        .user-pasword:hover {
+            background-color: #272a2c;
+       }
+        .user-email:hover {
+            background-color: #272a2c;
+       }
+        input {
+            border: 0;
+            width: 100%;
+            height: 68px;
+            background-color: transparent;
+       }
+        input:focus {
+            outline: initial;
+       }
+        .logout {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            background-color: rgba(39, 42, 44, 0.23);
+            padding: 2px;
+            margin: 60px 0 10px;
+            border-radius: 50px;
+            border: 2px solid #dc6180;
+            color: #dc6180;
+       }
+        input[type="submit"] {
+            height: 30px;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 100;
+            letter-spacing: 0.1rem;
+       }
+        input[type="submit"]:hover {
+            background-color: #1a1c1d;
+       }
+        .forgot-pass {
+            font-size: 0.9rem;
+            padding: 0 30px 0 56px;
+            color: #606479;
+       }
+        @media (max-width: 1170px) {
+            .wrapper-content {
+                width: 65%;
+           }
+       }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+  
+  
+            <div class="wrapper-content">
+                <center>
+                    <img src="Logo.jpg" width="100" height="65">
+                </center>              
+              <div class="or-email"><span>Staff Login</span></div>
+              
+              <form method="post"> 
+                                      <input type="text" class="user-email" id="email" placeholder="Email" autocomplete="off"> 
+                                     <input type="password" class="user-pasword" id="password" placeholder="Password" autocomplete="off">
+                                   </form>
+              
+              
+              <div class="logout">
+                                       <input type="submit" value="Login">
+                
+                  
+                                   </div>
+              <a href="#" class="forgot-pass">Forgotten password?</a>
+              
+              
+            </div>
+            
+            
+            
+          </div>
+    </body>
+</html>
