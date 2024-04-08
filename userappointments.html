@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Appointments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ECF3F3;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            display: block;
+            margin: 30px auto; /* Center the form horizontally */
+            max-width: 500px; /* Set maximum width for the form */
+            overflow: hidden;
+            background: #FFF;
+            border: 1px solid #E4E4E4;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .col-2, .col-3, .col-4 {
+            border-bottom: 1px solid #E4E4E4;
+        }
+
+        .col-2, .col-3, .col-4 {
+            box-shadow: 1px 1px #E4E4E4;
+            border: none;
+            width: calc(100% - 40px); /* Adjust width of columns to accommodate margin */
+            margin: 0 auto 20px; /* Add margin at bottom to separate columns */
+        }
+
+        .col-2, .col-3, .col-4 label {
+            display: block;
+            padding: 20px;
+            font-weight: 600;
+            color: #141010;
+            cursor: pointer;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea,
+        input[type="date"],
+        input[type="time"] {
+            display: block;
+            width: calc(100% - 10px);
+            height: 27px;
+            margin: 5px;
+            padding: 7px 5px 3px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            background: transparent;
+            font-size: 14px;
+            opacity: .66;
+            transition: opacity .3s, box-shadow .3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus {
+            opacity: 1;
+            box-shadow: 0 3px 4px rgba(0, 0, 0, .15);
+        }
+
+        .col-submit {
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            border: 1px solid #E4E4E4;
+            background: #ff0400;
+            color: #fff;
+            padding: 10px;
+            width: calc(100% - 20px); /* Adjust width of button */
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00aa0e;
+        }
+    </style>
+</head>
+<body>
+    <div id="userNavbar"></div>
+    
+    <form method="post">
+        <div class="col-2">
+            <label for="patientName">Name</label>
+            <input type="text" id="patientName" name="patientName" placeholder="Enter Patient Name" tabindex="1" />
+        </div>
+        <div class="col-2">
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Patient Number" tabindex="2" />
+        </div>
+        <div class="col-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" tabindex="3" />
+        </div>
+        <div class="col-3">
+            <label for="doctor">Doctors</label>
+            <select id="doctor" name="doctor" tabindex="4">
+                <option value="">Select Doctor</option>
+                <option value="Dr Karthik Sarma">Dr Karthik Sarma</option>
+                <option value="Dr Kushal">Dr Kushal</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <label for="appointmentDate">Date</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" tabindex="5" />
+        </div>
+        <div class="col-3">
+            <label for="appointmentTime">Time</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" tabindex="6" />
+        </div>
+        <div class="col-4">
+            <label for="symptoms">Reason For Appointment</label>
+            <textarea id="symptoms" name="symptoms" placeholder="Enter Symptoms" tabindex="7"></textarea>
+        </div>
+        <div class="col-submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#userNavbar').load('usernavbar.html');
+        });
+    </script>
+</body>
+</html>
